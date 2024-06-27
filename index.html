@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Register</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="form-container">
+      <h1 id="title">Pet Register</h1>
+      <p id="description">Form to register your pets.</p>
+
+      <form action="" id="survey-form">
+
+          <div class="form-group">
+            <label for="name" id="name-label" class="field-label">
+              Owner Names
+            </label>
+            <input type="text"
+            class="field-input form-control" id="name" required placeholder="enter your name" />
+          </div>
+
+          <div class="form-group">
+            <label for="email" id="email-label" class="field-label">
+              Owner Email
+            </label>
+            <input type="email" id="email" class="field-input form-control" required placeholder="enter your email"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="pet-name" id="pet-name-label" class="field-label">
+              Pet Name
+            </label>
+            <input type="text" id="pet-name" class="field-input form-control" required placeholder="enter your pet name"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="number" id="number-label" class="field-label">
+              Pet Age
+            </label>
+            <input type="number" id="number" class="field-input form-control" required min="0" max="20" placeholder="enter your age" />
+          </div>
+
+        <div class="form-group">
+          <label for="dropdown">Pet Gender</label>
+          <select name="dropwdown" id="dropdown" class="form-control">
+            <option value="select">select gender</option>
+            <option value="male">male</option>
+            <option value="female">female</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Insurance Type</p>
+          <label for="free" id="label-free">
+            <input type="radio" class="input-radio" name="insurance-type" id="free" value="free"/>
+            Free
+          </label>
+          <label for="paid" id="label-paid">
+            <input type="radio" class="input-radio" name="insurance-type" id="paid" value="paid"/>
+            Paid
+          </label>
+        </div>
+
+        <div class="form-group">
+          <p>Insurance Additionals</p>
+          <label for="death-expensesid="label-free">
+            <input class="" type="checkbox" name="death-expenses" id="death-expenses" value="death-expenses"/>
+            Death Expenses
+          </label>
+          <label for="ambulance" id="label-paid">
+            <input class="" type="checkbox" name="ambulance" id="ambulance" value="ambulance"/>
+            Ambulance
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label for="additional-comments">
+            Additional Comments
+          </label>
+          <textarea class="input-textarea" name="additional-comments" id="additional-comments">
+          
+          </textarea>
+        </div>
+
+        <button id="submit">submit</button>
+      </form>
+    </main>
+  </body>
+</html>
